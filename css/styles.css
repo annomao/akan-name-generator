@@ -3,6 +3,10 @@
   margin: 0;
   padding: 0;
 }
-.container{
+section{
+  padding: 30px;
+  display: block;
+}
+label{
   display: block;
 }
