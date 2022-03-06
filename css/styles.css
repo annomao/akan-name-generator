@@ -4,7 +4,7 @@
   padding: 0;
   font-family: "Open Sans", sans-serif;
 }
-body{
+html{
   background-image: url("../images/stars.jpg");
   background-repeat: no-repeat;
   background-size: cover;
