@@ -1,0 +1,80 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+html{
+  background-image: url("../images/stars.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section{
+  padding: 30px;
+  display: block;
+}
+.container{
+  background-color: rgba(255,228,196,0.4);
+  opacity: 0.8;
+  display: block;
+  padding: 20px;
+  height: auto;
+}
+h1{
+  color: rgba(173, 255, 47,1);
+}
+p{
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+label{
+  display: block;
+  color: white;
+}
+input, select {
+  color: whitesmoke;
+  font-size: 15px;
+  width: 100%;
+  background-color: transparent;
+  padding: 12px 20px;
+  margin: 5px 0;
+  display: block;
+  border: none;
+  border-bottom: 1px solid rgba(173, 255, 47,1);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+select option{
+  background: transparent;
+  color: #0e0b16;
+}
+input:focus, select:focus{
+  outline: none;
+}
+
+input[type=submit],input[type=reset] {
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  padding: 14px 20px;
+  margin: 10px 0;
+  border: 1px solid rgba(173, 255, 47,1);
+  border-radius: 4px;
+  cursor: pointer;
+}
+#results{
+  background-color: transparent;
+  margin: auto;
+  padding: 30px;
+  font-size: 25px;
+  color: rgba(173, 255, 47,1);
+}
+/*style for screens bigger than screens*/
+@media screen and (min-width: 768px){
+  .container{
+    margin: auto;
+    width: 50%;
+  }
+  
+}
