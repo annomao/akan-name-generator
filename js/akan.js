@@ -1,14 +1,10 @@
 //get form and use submit event to run the akan name function
 let formSubmit = document.getElementById("form-id");
+let resetForm = document.getElementById("reset-form")
  
 formSubmit.addEventListener('submit', displayName);
 formSubmit.addEventListener('submit', handleForm);
-
-function displayName(){
-  message = getAkanName();
-  results = document.getElementById("results");
-  results.textContent = message;
-}
+resetForm.addEventListener('click',hideName);
 
 function getAkanName(){
 //capture form input values
@@ -45,5 +41,17 @@ refer to above comments */
 function handleForm(event) {
   event.preventDefault(); 
  }
+
+//displays results of the getAkanName function
+function displayName(){
+  message = getAkanName();
+  results = document.getElementById("results");
+  results.textContent = message;
+}
+//sets the text in the results div to empty when reset is clicked
+function hideName(){
+  results = document.getElementById("results");
+  results.textContent = "";
+}
 
 
