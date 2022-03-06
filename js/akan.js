@@ -1,7 +1,19 @@
 //get form and use submit event to run the akan name function
-let formSubmit = document.getElementById("form-id")
-formSubmit.addEventListener('submit', getAkanName)
+let formSubmit = document.getElementById("form-id");
+ 
+formSubmit.addEventListener('submit', displayName);
+formSubmit.addEventListener('submit', handleForm);
 
+//prevents form from submitting hence prevents form refresh
+function handleForm(event) {
+  event.preventDefault(); 
+ }
+
+function displayName(){
+  message = getAkanName();
+  results = document.getElementById("results");
+  results.textContent = message;
+}
 function getAkanName(){
 //capture form input values
 
@@ -24,15 +36,13 @@ refer to above comments */
   const day1 = birthday.getDay();
 
   if (gender === "female") {
-    alert(`Your Akan name is ${femaleNames[day1]}`);
+    return `Hey ${fullName}, your Akan name is ${femaleNames[day1]}`;
   }
   else{
-    alert("nothing to display");
+    return `Hey ${fullName}, your Akan name is ${maleNames[day1]}`;
   }
-
-  //let bDate = typeof birthDate
-  //alert(`${day1}}`)
 }
 
-
+/*     results = document.getElementById("results");
+    results.textContent = message;*/
 
