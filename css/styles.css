@@ -13,10 +13,11 @@ section{
   display: block;
 }
 .container{
+  background-color: rgba(255,228,196,0.5);
+  opacity: 0.8;
   display: block;
   padding: 30px;
   height: auto;
-  border: 3px solid green; 
 }
 label{
   display: block;
