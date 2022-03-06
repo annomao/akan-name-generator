@@ -14,6 +14,7 @@ function displayName(){
   results = document.getElementById("results");
   results.textContent = message;
 }
+
 function getAkanName(){
 //capture form input values
 
