@@ -46,3 +46,10 @@ input[type=submit],input[type=reset] {
   border-radius: 4px;
   cursor: pointer;
 }
+#results{
+  background-color: transparent;
+  margin: auto;
+  padding: 30px;
+  font-size: 25px;
+  color: white;
+}
