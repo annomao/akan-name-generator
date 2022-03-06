@@ -13,21 +13,21 @@ section{
   display: block;
 }
 .container{
-  background-color: rgba(255,228,196,0.2);
+  background-color: rgba(255,228,196,0.4);
   opacity: 0.8;
   display: block;
   padding: 20px;
   height: auto;
 }
 h1{
-  color: rgba(173, 255, 47,0.7);
+  color: rgba(173, 255, 47,1);
 }
 p{
   color: #d3d3d3;
 }
 label{
   display: block;
-  color: rgba(173, 255, 47,0.7);
+  color: rgba(173, 255, 47,1);
 }
 input, select {
   color: whitesmoke;
@@ -66,4 +66,12 @@ input[type=submit],input[type=reset] {
   padding: 30px;
   font-size: 30px;
   color: white;
+}
+/*style for screens bigger than screens*/
+@media screen and (min-width: 768px){
+  .container{
+    margin: auto;
+    width: 50%;
+  }
+  
 }
