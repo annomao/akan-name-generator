@@ -18,7 +18,7 @@ function getAkanName(){
   let birthDate = document.getElementById("birth-date").value;
   
 //to note: javascript stores days in a list like array where sunday is equal to index 0
-//days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday", "Saturday"];
+  const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday", "Saturday"];
 //akan names stored in lists the names are stored in index corresponding to the days list
 
   const maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi","Kwame"];
@@ -32,10 +32,12 @@ refer to above comments */
   let day1 = birthday.getDay();
 
   if (gender === "female") {
-    return `Hey ${fullName}, your Akan name is ${femaleNames[day1]} and ${birthDate} ${birthday}`;
+    return `Hey ${fullName}, you were born on a ${days[day1]}.
+    your Akan name is ${femaleNames[day1]} `;
   }
   else{
-    return `Hey ${fullName}, your Akan name is ${maleNames[day1]} and ${birthday}`;
+    return `Hey ${fullName}, you were born on a ${days[day1]}.
+    your Akan name is ${maleNames[day1]} `;
   }
 }
 
